@@ -49,3 +49,16 @@ footer {
     padding: 10px 0;
     background: #fff;
 }
+
+.dark{
+    background-color: #333;
+}
+
+.dark *{
+    background-color: #333;
+    color: #fff;
+}
+
+.dark h3 {
+    color: #59acf0
+}
