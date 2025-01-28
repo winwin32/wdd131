@@ -12,5 +12,5 @@ function changeTheme() {
         page_body.classList.remove("dark")
     }
 }
-
+changeTheme('dark')
 themeSelector.addEventListener('change', changeTheme);
