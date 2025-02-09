@@ -1,0 +1,43 @@
+.colors{
+    background-color: #C6D8AF;
+    font: #DBD8B3;
+    color: #FCC8B2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: left;
+    padding: 20px;
+    background-color: #2F2504;
+    color: #D0DDD7;
+}
+
+nav {
+    background-color: #594E36;
+    padding: 10px;
+    display: grid;
+    justify-content: end;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #D0DDD7;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
