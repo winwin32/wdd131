@@ -1,15 +1,9 @@
-.colors{
-    background-color: #C6D8AF;
-    font: #DBD8B3;
-    color: #FCC8B2;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
     text-align: left;
     padding: 20px;
     background-color: #2F2504;
     color: #D0DDD7;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -41,3 +35,40 @@ nav ul li a {
     gap: 20px;
     padding: 20px;
 }
+
+.grid-item {
+    padding: 10px;
+}
+
+.grid-item:nth-child(3n + 1) {
+    grid-column: 1;
+}
+
+.grid-item:nth-child(3n + 2) {
+    grid-column: 2;
+}
+
+time {
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+aside {
+    text-align: right;
+    max-width: 250px;
+    border-right: 2px solid #594E36;
+    padding-right: 20px;
+}
+
+article, section {
+    outline: 3px solid #594E36;
+}
+
+.section-slot {
+    grid-column: 3;
+    padding: 10px;
+    grid-row: 1;
+  }
