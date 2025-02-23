@@ -1,0 +1,99 @@
+form {
+    position: relative;
+    width: 320px; /* Adjust to your needs */
+    height: 200px;
+}
+
+.front {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10%;
+    width: 120%;
+    height: 120%;
+    background: #d9d9d9;
+    border-radius: 10px;
+    border: solid black;
+    border-width: 1px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+
+
+.expiration {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    gap: 10%;
+    align-items: center; 
+}
+
+.expiration label {
+    grid-column: span 2;
+}
+
+.expiration input {
+    padding-top: -30px;
+}
+
+.back {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #f0f0f0; 
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border: solid black;
+    border-width: 1px;
+    top: 50px; 
+    left: 100px; 
+    z-index: -2;
+
+    display: grid;
+    place-items: end end;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.back .cvc {
+    display: grid;
+}
+
+.back input {
+    width: 50px;
+}
+
+button {
+    position: absolute;
+    bottom: -170px;
+    right: -185px;
+    padding: 12px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333; /* Slight hover effect */
+}
+
+label {
+    padding: 3px;
+}
+
+.cardNumber{
+    grid-column: span 2;
+}
+
+.cardNumber input {
+    width: 80%;
+}
+
+.line {
+    height: 50px;
+    width: 100px;
+    background: rgb(48, 47, 47);
+    margin-right: -15px;
+}
