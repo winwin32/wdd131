@@ -1,5 +1,5 @@
 let count = 1
-import {tempHtml} from "templates.js"
+import {tempHtml} from "./templates.js"
 
 function participantTemplate(){
     count++
