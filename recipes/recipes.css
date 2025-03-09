@@ -1,0 +1,131 @@
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: large;
+    gap: 10px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+    overflow: hidden; 
+    width: 100%;
+    max-width: 1700px;
+    margin: 10px;
+}
+
+.search input{
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search img {
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: large;
+    margin-bottom: 60px;
+    
+}
+
+.recipe img {
+    max-width: 100%;
+}
+
+.recipe .type {
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+.recipe .name {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    color: #423fda;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 20px;
+}
+
+footer * {
+    color: #423fda;
+    text-decoration: none;
+}
+
+@media (min-width: 1000px)  {
+
+    .recipe {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 10px;
+        border: 1px solid #000000;
+        border-radius: 25px;
+        padding: 20px;
+        font-size: large;
+        margin-bottom: 60px;
+        
+    }
+
+    .recipe img {
+        flex: 2;
+        max-width: 40%;
+    }
+
+    .recipe .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+}
+
+
