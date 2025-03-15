@@ -33,22 +33,27 @@ function ratingTemplate(rating) {
 }
 
 function recipeTemplate(recipe) {
-	return `<figure class="recipe">
-	<img src="${recipe['image']}" alt="Image of ${recipe['description']}" />
-	<figcaption>
-		<ul class="recipe__tags">
-			${tagsTemplate(recipe['tags'])}
-			
-		</ul>
-		<h2><a href="https://winwin32.github.io/wdd131/recipes/index.html">${recipe['name']}</a></h2>
-		<p class="recipe__ratings">
-            ${ratingTemplate(recipe['rating'])}
-		</p>
-		<p class="recipe__description">
-            ${recipe['description']}
-		</p>
-</figcaption>
-</figure>`;
+    if(recipe){
+        return `<figure class="recipe">
+        <img src="${recipe['image']}" alt="Image of ${recipe['description']}" />
+        <figcaption>
+            <ul class="recipe__tags">
+                ${tagsTemplate(recipe['tags'])}
+                
+            </ul>
+            <h2><a href="https://winwin32.github.io/wdd131/recipes/index.html">${recipe['name']}</a></h2>
+            <p class="recipe__ratings">
+                ${ratingTemplate(recipe['rating'])}
+            </p>
+            <p class="recipe__description">
+                ${recipe['description']}
+            </p>
+    </figcaption>
+    </figure>`;}
+    else{
+        return `<p>No results, sorry!</p>`
+    }
+	
 }
 
 
@@ -72,12 +77,13 @@ function filterRecipes(query) {
 
 function searchHandler(e) { 
 	e.preventDefault();
+    document.querySelectorAll(`.recipe`).forEach(element => element.remove());
     
     const searchInput = document.querySelector(".searchInput");
     const query = searchInput.value.trim().toLowerCase(); 
     const filteredRecipes = filterRecipes(query);
     
-    renderRecipes(filteredRecipes);
+    renderRecipes(filteredRecipes[0]);
 
 }
 
