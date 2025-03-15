@@ -57,20 +57,27 @@ function randomRecipes(recipeArray){
     return recipeArray[i]
 }
 
-function filter(query) {
-	const filtered = recipes.filter(filterFunction)
-	// sort by name
-	const sorted = filtered.sort(sortFunction)
-		return sorted
+function filterRecipes(query) {
+	const filtered = recipes.filter(recipe =>
+        recipe.name.toLowerCase().includes(query) ||
+        recipe.description.toLowerCase().includes(query) ||
+        recipe.tags.some(tag => tag.toLowerCase().includes(query)) ||
+        recipe.recipeIngredient.some(ingredient => ingredient.toLowerCase().includes(query))
+    );
 
+    const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
+    
+    return sorted;
 }
 
-function searchHandler(e) {
-	e.preventDefault()
-	// get the search input
-  // convert the value in the input to lowercase
-  // use the filter function to filter our recipes
-  // render the filtered list
+function searchHandler(e) { 
+	e.preventDefault();
+    
+    const searchInput = document.querySelector(".searchInput");
+    const query = searchInput.value.trim().toLowerCase(); 
+    const filteredRecipes = filterRecipes(query);
+    
+    renderRecipes(filteredRecipes);
 
 }
 
@@ -88,11 +95,11 @@ function renderRecipes(recipe) {
 }
 
 function init() {
-  // get a random recipe
   const recipe = randomRecipes(recipes)
-  // render the recipe with renderRecipes.
-  renderRecipes([recipe]);
+  renderRecipes(recipe);
 }
 
 
 init();
+
+document.querySelector(".search").addEventListener("submit", searchHandler);

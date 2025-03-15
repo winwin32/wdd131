@@ -36,15 +36,14 @@ header img {
 }
 
 .search img {
-    border-radius: 5px;
     cursor: pointer;
-    border: 1px solid #000000;
     width: 25px;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
+    padding: 3px;
 }
 
 .recipe {
@@ -64,10 +63,11 @@ header img {
     max-width: 100%;
 }
 
-.recipe .type {
+.recipe .recipe__tags {
     width: fit-content;
     padding: 5px;
     border: 1px solid #000000;
+    list-style-type: none;
 }
 
 .recipe .name {
