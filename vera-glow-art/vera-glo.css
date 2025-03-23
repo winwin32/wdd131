@@ -1,0 +1,36 @@
+body{
+    background-color: #36E3CA;
+    color: #e984bf;
+    color: #f3af6f;
+    color: #f8665b;
+    color: #fff;
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main{
+    background-color: #fff;
+    color: #e984bf;
+    padding: 30px;
+    padding-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.logo {
+    width: 450px;
+    height: 100px;
+    margin: 5px;
+  }
