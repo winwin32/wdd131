@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credit Card">
+    <title>Credit Card</title>
+    <meta name="author" content="Collin Brown">
+    <link rel="stylesheet" href="creditcard.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <form>
+            <div class="back">
+                <div class="line"></div>
+                <div></div>
+                <div></div>
+                <div class="cvc">
+                    <label>CVC/CVV</label>
+                    <input type="text" value="xxx">
+                </div>
+                
+            </div>
+            <div class="front">
+                <div><p>TOTAL: $19.99</p></div>
+                <div><img
+                    class="card-image"
+                    src="../images/logo.svg"
+                    height="55px"></div>
+                
+                <div class="cardNumber">
+                    <label>CARD NUMBER</label>
+                    <input type="text" value="1234 5678 9101 1020" pattern="\d{4} ?\d{4} ?\d{4} ?\d{4}" required>
+                </div>
+                <div class="cardHolder">
+                    <label>CARD HOLDER</label>
+                    <input type="text" value="John Doe">
+                </div>
+                <div class="expiration">
+                    <label class="date">EXPIRATION</label>
+                    <input type="text" value="MM" pattern="(0[1-9]|1[0-2])" required>
+                    <input type="text" value="YY" pattern="\d{2}" required>
+                </div>
+            </div>
+            
+            <a href="../index.html" class="button">Submit</a>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
