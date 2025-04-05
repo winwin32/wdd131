@@ -52,7 +52,7 @@ function artTemplate(art) {
   if (art) {
     return `<h2>Featured Art</h2>
     <div class="art">
-      <img class="view-toggle" src="${art['image']}" alt="${art['name']}" />
+      <img class="view-toggle" src="${art['image']}" alt="${art['name']}"  loading="eager" fetchpriority="high"/>
       <figcaption>
         <h2>${art['name']}</h2>
         <p class="art__description">
