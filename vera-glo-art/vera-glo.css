@@ -41,6 +41,19 @@ main {
     display: flex;
 }
 
+.child *{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 400px;
+    max-width: fit-content;
+}
+
 @media screen and (max-width: 1000px) {
     main {
         display: block;
@@ -61,7 +74,16 @@ main {
         align-items: center;
         list-style: none;
     }
-    
+    .child *{
+        font-size: 18px;
+        margin: 8px;
+        height: auto;
+        padding-right: 20px;
+    }
+    .child img{
+        min-width: 300px;
+        max-width: fit-content;
+    }
   }
   
 @media screen and (max-width: 700px) {
@@ -83,7 +105,15 @@ main {
         align-items: center;
         list-style: none;
     }
-    
+    .child *{
+        font-size: 16px;
+        margin: 10px;
+        padding-right: 20px;
+    }
+    .child img{
+        min-width: 200px;
+        max-width: fit-content;
+    }
 }
 
 img {
@@ -164,17 +194,6 @@ footer {
     overflow: hidden;
 }
 
-.child *{
-    font-size: 40px;
-    margin: 40px;
-}
-
-.child img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 h1, h2, h3 {
     font-family: "Dancing Script", cursive;
     text-align: center;
@@ -193,4 +212,19 @@ h1, h2, h3 {
     padding: 25px;
     border: 4px dotted #f3af6f;
     margin: 25px;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+.child a{
+    color: #e984bf;
+    text-decoration: none;
+}
+
+.child a:hover {
+    color: #f37a71;
 }
