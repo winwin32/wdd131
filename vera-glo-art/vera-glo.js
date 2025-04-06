@@ -1,26 +1,9 @@
-const artGallery = [{
-  description:
-    "Don't worry so much about life. Take in the beauty and simple moments it gives you.",
-  image: './images/abstract2.png',
-  name: 'Enjoy - Abstract',
-},
+const artGallery = [
 {
   description:
     "Eve was an honorable and brave woman who made a hard choice that led to many good things for her and her family.",
   image: './images/eve.png',
   name: 'Eve\'s Choice',
-},
-{
-  description:
-    "Welcome challenges in your life when they make you grow. That's the only way you can get better at anything!",
-  image: './images/motivate.jpg',
-  name: 'Bring it on!',
-},
-{
-  description:
-    "Creating gives us purpose and meaning. We need to leave something behind rather than just take what others have given us.",
-  image: './images/motivate2.jpg',
-  name: 'Create VS Consume',
 },
 {
   description:
@@ -33,12 +16,6 @@ const artGallery = [{
     "Jesus is a gentle man and I wanted to capture his calm, quiet but powerful nature.",
   image: './images/savior.png',
   name: 'Chosen Savior',
-},
-{
-  description:
-    "My interpretation of the first vision in the Linocut style",
-  image: './images/vision.png',
-  name: 'First Vision - Directly Above My Head',
 }
 ]
 
